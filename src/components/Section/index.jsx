@@ -1,17 +1,34 @@
 import React from "react";
-import { ButtonGroup, ItemText, LeftButton, RightButton, Wrap } from "./style";
+import {
+  ButtonGroup,
+  Buttons,
+  DownArrow,
+  ItemText,
+  LeftButton,
+  RightButton,
+  Wrap,
+} from "./style";
 
-const Section = () => {
+const Section = ({
+  title,
+  description,
+  leftBtnText,
+  rightBtnText,
+  backgroundImg,
+}) => {
   return (
-    <Wrap>
+    <Wrap bgImage={backgroundImg}>
       <ItemText>
-        <ItemText.Title>Model S</ItemText.Title>
-        <ItemText.Desc>Order Online for Touchless Delivery</ItemText.Desc>
+        <ItemText.Title>{title}</ItemText.Title>
+        <ItemText.Desc>{description}</ItemText.Desc>
       </ItemText>
-      <ButtonGroup>
-        <LeftButton>CUSTOM ORDER</LeftButton>
-        <RightButton>EXISTING INVENTORY</RightButton>
-      </ButtonGroup>
+      <Buttons>
+        <ButtonGroup>
+          <LeftButton>{leftBtnText}</LeftButton>
+          {rightBtnText && <RightButton>{rightBtnText} </RightButton>}
+        </ButtonGroup>
+        <DownArrow />
+      </Buttons>
     </Wrap>
   );
 };
