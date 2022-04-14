@@ -22,7 +22,9 @@ const ItemText = styled.div`
 
 ItemText.Title = styled.h1``;
 
-ItemText.Desc = styled.p``;
+ItemText.Desc = styled.p`
+  padding-top: 10px;
+`;
 
 const Buttons = styled.div``;
 
