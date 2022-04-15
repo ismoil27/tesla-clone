@@ -6,11 +6,11 @@ const Home = () => {
   return (
     <Container>
       <Section
-        title="Model S"
+        title="Model 3"
         description="Order Online for Touchless Delivery"
         leftBtnText="Custom Order"
         rightBtnText="Existing Inventory"
-        backgroundImg="model-s.jpg"
+        backgroundImg="model-3.jpg"
       />
       <Section
         title="Model Y"
@@ -20,11 +20,11 @@ const Home = () => {
         backgroundImg="model-y.jpg"
       />
       <Section
-        title="Model 3"
+        title="Model S"
         description="Order Online for Touchless Delivery"
         leftBtnText="Custom Order"
         rightBtnText="Existing Inventory"
-        backgroundImg="model-3.jpg"
+        backgroundImg="model-s.jpg"
       />
       <Section
         title="Model X"
