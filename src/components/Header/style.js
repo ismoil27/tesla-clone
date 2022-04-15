@@ -36,6 +36,7 @@ Menu.Item = styled.p`
 `;
 
 Menu.Right = styled.div`
+  display: flex;
   a {
     /* font-weight: 600; */
     /* text-transform: uppercase; */
@@ -56,6 +57,9 @@ const BurgerNav = styled.div`
   display: flex;
   flex-direction: column;
   text-align: start;
+  /* transition: all 1s ease-out; */
+  transition: transform 0.3s ease-in;
+
   transform: ${(props) => (props.show ? "translateX(0)" : "translateX(100%)")};
   li {
     padding: 15px 0;
@@ -69,6 +73,17 @@ const CloseWrapper = styled.div`
 
 const CustomClose = styled(CloseOutlined)`
   cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+
+  :hover {
+    background-color: rgb(242, 242, 242);
+    border-radius: 50%;
+  }
 `;
 
-export { Container, Menu, BurgerNav, CustomClose, CloseWrapper };
+const CustomMenu = styled.div`
+  cursor: pointer;
+`;
+
+export { Container, Menu, BurgerNav, CustomClose, CloseWrapper, CustomMenu };
